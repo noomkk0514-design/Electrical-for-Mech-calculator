@@ -5,7 +5,7 @@ import os
 
 st.set_page_config(page_title="Electrical System Calculator", page_icon="⚡", layout="wide")
 
-st.title("⚡ Electrcal for Mechanical Calculator")
+st.title("⚡ Electrical for Mechanical Calculator")
 st.markdown("Calculation of motor current, circuit breaker ratings (AT/AF), wire and conduit size selection, and total main circuit breaker calculation อ้างอิงตามมาตรฐานการติดตั้งทางไฟฟ้า สำหรับประเทศไทย พ.ศ. 2564 ของ วสท.")
 
 with st.expander("ℹ️ คำอธิบายความหมายตัวย่อ (คลิกเพื่อดูรายละเอียด)"):
@@ -19,7 +19,7 @@ with st.expander("ℹ️ คำอธิบายความหมายตั�
     - **AF**: Ampere Frame (ขนาดโครงสร้างของเบรกเกอร์)
     - **L Cable / G Cable**: Line Cable (สายไฟเส้นไฟ) / Ground Cable (สายดิน)
     - **R**: Raceway (ท่อร้อยสายไฟ เช่น IMC)
-        - **PVC SC**: PVC Single core (IEC01,NYY)
+    - **PVC SC**: PVC Single core (IEC01,NYY)
     - **PVC MC**: PVC Multicore (IEC10, NYY)
     - **XLPE SC**: XLPE Single core (CV)
     - **XLPE MC**: XLPE Multicore (CV)
