@@ -5,8 +5,25 @@ import os
 
 st.set_page_config(page_title="Electrical System Calculator", page_icon="⚡", layout="wide")
 
-st.title("⚡ Electrical System Calculator")
-st.markdown("Select EE For Mechanical Equipment - *Streamlit Edition*")
+st.title("⚡ Electrcal for Mechanical Calculator")
+st.markdown("Calculation of motor current, circuit breaker ratings (AT/AF), wire and conduit size selection, and total main circuit breaker calculation อ้างอิงตามมาตรฐานการติดตั้งทางไฟฟ้า สำหรับประเทศไทย พ.ศ. 2564 ของ วสท.")
+
+with st.expander("ℹ️ คำอธิบายความหมายตัวย่อ (คลิกเพื่อดูรายละเอียด)"):
+    st.markdown("""
+    - **kW**: Kilowatt (กำลังไฟฟ้า)
+    - **DOL**: Direct On Line (การสตาร์ทมอเตอร์โดยตรง)
+    - **YD**: Star-Delta (การสตาร์ทแบบสตาร์-เดลต้า)
+    - **SS**: Soft Starter (การสตาร์ทแบบซอฟต์สตาร์ท)
+    - **VSD**: Variable Speed Drive (เครื่องควบคุมความเร็วมอเตอร์)
+    - **AT**: Ampere Trip (พิกัดกระแสตัดวงจรของเบรกเกอร์)
+    - **AF**: Ampere Frame (ขนาดโครงสร้างของเบรกเกอร์)
+    - **L Cable / G Cable**: Line Cable (สายไฟเส้นไฟ) / Ground Cable (สายดิน)
+    - **R**: Raceway (ท่อร้อยสายไฟ เช่น IMC)
+        - **PVC SC**: PVC Single core (IEC01,NYY)
+    - **PVC MC**: PVC Multicore (IEC10, NYY)
+    - **XLPE SC**: XLPE Single core (CV)
+    - **XLPE MC**: XLPE Multicore (CV)
+    """)
 
 @st.cache_data
 def load_data():
